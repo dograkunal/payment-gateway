@@ -2,9 +2,7 @@ import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import "../App.css";
 import Image from "../assets/NitroTech.jpg";
-const PRICE_ID = "price_1NfybaSJrpfW2uJOomtube7j";
-const PUBLIC_KEY =
-  "pk_test_51NfyHxSJrpfW2uJO2lwv1halnoO45prlMXXAZUFT2gpnIIvUzC0riCjv3uwtL2chAJuyVt9TbHLnup8DjNEmTYcc004VFoqK9A";
+import { PUBLIC_KEY, PRICE_ID } from "../constants";
 const stripePromise = loadStripe(PUBLIC_KEY);
 
 function StripeClient() {
